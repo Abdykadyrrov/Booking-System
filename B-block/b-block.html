@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Booking System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@5.11.0/main.min.css">
+    <script src="./script/script.js"></script>
+    
+
+</head>
+
+<body >
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><span class="logo d-none d-sm-inline">
+                        <img src="https://ocs.alatoo.edu.kg/pluginfile.php/1/core_admin/logocompact/300x300/1669000356/Logo.png"
+                            alt="Online Course System"> Booking System</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blocks
+                            </a>
+                            <ul class="dropdown-menu" id="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="a-block.html">A-block</a></li>
+                                <li><a class="dropdown-item" href="b-block.html">B-block</a></li>
+                                <li><a class="dropdown-item" href="c-block.html">C-block</a></li>
+                                <li><a class="dropdown-item" href="d-block.html">D-block</a></li>
+                                <li><a class="dropdown-item" href="sport.html">Sport</a></li>
+                                <li><a class="dropdown-item" href="other.html">Other</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login.html
+                            ">Log out</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" onclick="Data()" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Имя Пользователя:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Иванов Иван" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="start" class="form-label">Start:</label>
+                            <input type="text" class="form-control" id="start" placeholder="YY" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="end" class="form-label">End:</label>
+                            <input type="text" class="form-control" id="end" placeholder="name@example.com" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="enter btn">Send</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='calendar' class="container my-5 py-5"></div>
+    
+    <!-- Button trigger modal -->
+    
+    <!-- Modal -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@5.11.0/main.min.js"></script>
+    
+
+
+</body>
+
+</html>
